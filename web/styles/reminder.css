@@ -1,0 +1,148 @@
+.reminder-container {
+    border: 1px solid blue;
+    -webkit-border-radius: .5em;
+    -moz-border-radius: .5em;
+    border-radius: .5em;
+    padding: .5em;
+    margin-bottom: 1em;
+    position: relative;
+    margin-left: 6rem;
+}
+
+.reminder-container:before,
+.reminder-container:after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.reminder-container .delete {
+    float:left;
+    display: block;
+    width: 5rem;
+    height: 5rem;
+    text-indent: 100%;
+    position: absolute;
+    overflow: hidden;
+    right: calc(100% + 1rem);
+}
+
+.reminder-container .delete:after {
+    content: 'X';
+    font-size: 5rem;
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    text-indent: 0;
+    line-height: 1;
+}
+
+.reminder-component {
+    float: left;
+}
+
+/*Reminder Days*/
+
+.reminder-days {
+    width: 75%;
+}
+
+.reminder-day {
+    width: 4em;
+    height: 4em;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    background-color: white;
+    border: 1px solid blue;
+    color: blue;
+    margin-right: .5em;
+}
+
+.reminder-day.active {
+    background-color: blue;
+    color: white;
+}
+
+/*Reminder Period*/
+
+.reminder-period {
+    display: inline-block;
+    margin-bottom: 1em;
+}
+
+.period-component {
+    display: inline-block;
+    margin-right: 1em;
+}
+
+.period-spacer {
+    margin-right: 1em;
+}
+
+
+/* Reminder Toggle*/
+.reminder-toggle {
+    width: 20%;
+    float: right;
+}
+.toggle-button,
+.toggle-button:after,
+.reminder-day {
+    transition: all .5s ease;
+}
+
+.toggle-button {
+    width: 100%;
+    background-color: #cccccc;
+    color: #999999;
+    padding: .5em;
+    border: 1px solid #999999;
+    position: relative;
+    -webkit-border-radius: 3em;
+    -moz-border-radius: 3em;
+    border-radius: 3em;
+    height: 60px;
+    text-align: right;
+    padding: 0 .5em;
+    font-size: 3em;
+}
+
+.toggle-button.active {
+    background-color: green;
+    color: white;
+    border: 1px solid white;
+    text-align: left;
+}
+
+.toggle-button:after {
+    content: '';
+    display: block;
+    position: absolute;
+    height: 100%;
+    width: 60px;
+    top: 0;
+    left: 0;
+    background-color: #999999;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+}
+.toggle-button.active:after {
+    left:calc(100% - 60px);
+}
+/*Reminder Message*/
+
+.reminder-message {
+    width: 100%;
+}
+
+.message-textbox {
+    width: 100%;
+    min-height: 2.5em;
+    font-size: 2em;
+}
+

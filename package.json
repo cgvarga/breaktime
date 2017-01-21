@@ -1,0 +1,20 @@
+{
+  "name": "break-time",
+  "version": "1.0.0",
+  "description": "Vanilla application which manages custom reminders and notifications.",
+  "main": "index.js",
+  "scripts": {
+    "start": "http-server ./web"
+  },
+  "keywords": [
+    "javascript",
+    "vanilla",
+    "notifications",
+    "reminders"
+  ],
+  "author": "Chris Varga",
+  "license": "ISC",
+  "devDependencies": {
+    "http-server": "^0.9.0"
+  }
+}
