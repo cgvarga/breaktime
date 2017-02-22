@@ -125,6 +125,7 @@ function ReminderTimePeriod (options, element) {
         reminderTimePeriod.options = options || {};
         renderLayout();
         bindListeners();
+        handlePeriodChange();
     }
 
     dependencyManager.getDependencies(dependencies)
